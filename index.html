@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acssets/css/style.css">
+    <link rel="stylesheet" href="acssets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <script src="acssets/ckeditor/ckeditor.js"></script>
+    <title>modal</title>
+</head>
+<body>
+    
+ <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="modal-heading-icon ti-book"></i>
+                         
+                    Upload Contents
+
+                </header>
+                <div class="modal-body">
+                    <label for="" class="modal-label">
+                        Tiêu đề
+                    </label>
+
+                    <input type="text" class="modal-input" placeholder="Nhập tiêu đề ">
+
+                    <label for="" class="modal-label">
+                        Chọn danh mục cha
+                    </label>
+                    <select name="" id="select-modal">
+                        <option value="">Chọn danh mục </option>
+                        <option value="">Chọn danh mục </option>
+                        <option value="">Chọn danh mục </option>
+                        <option value="">Chọn danh mục </option>
+                    </select>
+
+                    <div class="description">Mô tả
+                       
+                    </div>
+                    <textarea name="editor1" id="editor1" rows="10" cols="80">
+                    </textarea> 
+                                  
+                        <button id="upload">
+                            Send
+                            <!-- <i class="ti-check"></i> -->
+                            
+                        </button>
+                </div>
+                 
+
+                <script>
+                    // Replace the <textarea id="editor1"> with a CKEditor 4
+                    // instance, using default configuration.
+                    CKEDITOR.replace( 'editor1' );
+                </script>
+            </div>
+
+
+    </div>
+    
+   
+   
+    
+</body>
+</html>
